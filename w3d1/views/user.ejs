@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <%- include("_header") %>
+    <main>
+      <h1>Welcome back <%= name %></h1>
+      <% if(isAdmin){ %>
+      <p>You have admin powers</p>
+      <% } else { %>
+      <p>You don't have admin powers</p>
+      <% } %>
+
+      <p>
+        It is possible to contact you at <a href="mailto:<%= email %>"><%= email %></a>
+      </p>
+    </main>
+  </body>
+</html>
