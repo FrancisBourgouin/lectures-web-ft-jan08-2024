@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    div {
+      /* padding difference between two things: content, limits of the box */
+      /* margin */
+      /* border */
+      /* box-sizing: content-box; */
+      box-sizing: border-box;
+
+      /* width: 200px;
+      height: 200px; */
+
+      font-size: 90px;
+      display: inline-block;
+      background: brown;
+      border: 20px solid orangered;
+
+      padding: 50px;
+      margin: 50px;
+    }
+
+    header {
+      padding: 30px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Website title</h1>
+    </header>
+    <!-- What is div? -->
+    <!-- It's a box (div => divider) -->
+    <div>☕</div>
+    <div>☕</div>
+  </body>
+</html>

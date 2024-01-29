@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    /* 
+    
+    CSS serving HTML
+      Write the HTML, write the CSS to match the HTML already there
+
+    HTML serving CSS
+      Write the HTML with CSS in mind (utility-classes)
+    */
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Neue", cursive;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Merriweather", serif;
+    }
+
+    header {
+      background-color: #b0b;
+      padding: 1em;
+    }
+
+    section {
+      padding: 1em;
+      color: red;
+    }
+    section {
+      color: green !important; /* BAD ! DON'T USE IMPORTANT */
+    }
+    /* Specificity */
+    section.top-news {
+      background-color: #bada55;
+      color: blue;
+    }
+    section.bottom-news {
+      background-color: #c0ffee;
+    }
+
+    section article h1 {
+      /* Descendants */
+      text-decoration: underline;
+      /* text-underline-offset: -5em; */
+    }
+    section > h1 {
+      /* Childrens */
+      font-size: 2em;
+    }
+
+    /* {a:1, a:5, a:ron} */
+
+    /* 
+    obj.a = 1
+    obj.a = 5
+    obj.a = ron
+    */
+  </style>
+  <body>
+    <header>
+      <h1>Super website of destiny!</h1>
+    </header>
+    <main>
+      <section class="top-news">
+        <h1>Top news!</h1>
+        <article>
+          <h1>Article 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+      </section>
+      <section class="bottom-news">
+        <h1>Bottom news!</h1>
+        <article>
+          <h1>Article 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
