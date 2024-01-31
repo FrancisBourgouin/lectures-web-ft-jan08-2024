@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog posts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/mock_data.js"></script>
+    <script src="/helpers.js"></script>
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Small blog for fun!</h1>
+    </header>
+    <form>
+      <h1>New post!</h1>
+      <input type="text" placeholder="Enter the blog title" name="title" />
+      <input type="text" placeholder="Enter the blog text" name="body" />
+      <!-- <input type="number" placeholder="Enter the user id" name="userId" /> -->
+      <!-- USER ID IS BAD! WE SHOULD BETTER, EVENTUALLY, WHEN WE HAVE TIME -->
+      <select name="userId">
+        <option value="">Choose a user</option>
+      </select>
+      <button>Submit the new post</button>
+    </form>
+    <main>
+      <div class="loader">Loading...</div>
+    </main>
+  </body>
+</html>
