@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+header {
+  background-color: #888;
+  background-image: url(img/header.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+section {
+  margin: 1em auto;
+}
+section > * {
+  max-width: 60ch;
+}
+
+section.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.blog-posts {
+  max-width: 60ch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.blog-posts article {
+  background-color: #f0f0f0;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 48%;
+}
+
+section.blog-posts article:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+footer {
+  background-color: #888;
+  background-image: url(img/header.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: bottom;
+  padding: 1em;
+  color: white;
+  font-weight: 700;
+}
+
+footer p {
+  margin: 0 auto;
+  max-width: 70ch;
+  text-align: center;
+}

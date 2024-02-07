@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>All the jokes!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Joke partay!</h1>
+    </header>
+    <main>
+      <h1>New joke time.</h1>
+
+      <form action="/jokes" method="POST">
+        <input type="text" name="question" placeholder="Enter the question" />
+        <input type="text" name="answer" placeholder="Enter the answer" />
+        <input type="number" name="rating" placeholder="Enter the rating" />
+        <!-- <input type="number" name="author_id" placeholder="Enter the author id" /> -->
+        <select name="author_id">
+          <option value="">Please choose an author</option>
+          <% for(const author of authors){ %>
+          <option value="<%= author.id %>"><%= author.name %></option>
+          <% } %>
+        </select>
+        <button>Add the joke</button>
+      </form>
+
+      <p><a href="/jokes">Back to all jokes</a></p>
+    </main>
+  </body>
+</html>

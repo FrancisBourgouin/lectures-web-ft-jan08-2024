@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>All the jokes!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Joke partay!</h1>
+    </header>
+    <main>
+      <h1>Joke #<%= joke.id %></h1>
+
+      <article>
+        <p>Q: <%= joke.question %></p>
+        <p>A: <%= joke.answer %></p>
+        <p>By: <%= joke.author_name %></p>
+      </article>
+
+      <p><a href="/jokes">Back to all jokes</a></p>
+    </main>
+  </body>
+</html>
