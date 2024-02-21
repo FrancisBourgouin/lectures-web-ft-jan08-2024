@@ -1,0 +1,60 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.Header {
+  width: 100%;
+  background-color: #bada55;
+  padding: 2em;
+  color: #000;
+}
+
+section > header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    img {
+      height: 100px;
+    }
+  }
+}
+
+.ReplyListItem {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "profile reply"
+    "name reply";
+
+  img {
+    grid-area: profile;
+    height: 200px;
+  }
+  p:last-of-type {
+    grid-area: name;
+  }
+  p:first-of-type {
+    grid-area: reply;
+  }
+}
+
+.ReplyForm {
+  padding: 1em;
+  background-color: #b0b;
+
+  input,
+  button {
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.2em;
+  }
+}
